@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A birthday website made for Dita's 20th birthday on 24 May 2026.">
+  <title>Happy 20th Birthday, Dita</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas class="confetti" aria-hidden="true"></canvas>
+
+  <header class="hero" id="top">
+    <nav class="nav" aria-label="Birthday sections">
+      <a href="#letter">Letter</a>
+      <a href="#memories">Memories</a>
+      <a href="#reasons">20 Reasons</a>
+    </nav>
+
+    <div class="hero-media" aria-hidden="true">
+      <img src="assets/photos/photo-01.jpg" alt="">
+    </div>
+
+    <section class="hero-copy">
+      <p class="eyebrow">24 May 2026</p>
+      <h1>Happy 20th Birthday, Dita</h1>
+      <p class="subtitle">Today is all about the girl who makes my world feel warmer, softer, and so much brighter.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#letter">Open your surprise</a>
+        <a class="button secondary" href="#memories">See our memories</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="countdown-section" aria-labelledby="countdown-title">
+      <div>
+        <p class="section-kicker">Almost her day</p>
+        <h2 id="countdown-title">Countdown to 20</h2>
+      </div>
+      <div class="countdown" aria-live="polite">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="letter-section" id="letter" aria-labelledby="letter-title">
+      <div class="letter-image">
+        <img src="assets/photos/photo-02.jpg" alt="A special memory together">
+      </div>
+      <article class="letter">
+        <p class="section-kicker">A little message</p>
+        <h2 id="letter-title">For my birthday girl</h2>
+        <p>
+          Happy birthday, my love. You are turning 20, and I hope this year gives you the same kind of happiness
+          you give to everyone around you. You are beautiful in the way you smile, in the way you care, and in the
+          way you make ordinary moments feel unforgettable.
+        </p>
+        <p>
+          I made this for you because one message is not enough for someone this special. I hope every picture here
+          reminds you that you are loved, chosen, celebrated, and never alone.
+        </p>
+        <p class="signature">With all my heart,<br>Your person</p>
+      </article>
+    </section>
+
+    <section class="feature-strip" aria-label="Birthday highlights">
+      <div>
+        <strong>20</strong>
+        <span>beautiful years</span>
+      </div>
+      <div>
+        <strong>24</strong>
+        <span>May, her day</span>
+      </div>
+      <div>
+        <strong>Forever</strong>
+        <span>my favorite person</span>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="memories" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <p class="section-kicker">Our memories</p>
+        <h2 id="gallery-title">A wall full of us</h2>
+        <p>Tap any photo to see it bigger. Every smile here deserves its own little spotlight.</p>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section class="reasons-section" id="reasons" aria-labelledby="reasons-title">
+      <div class="section-heading">
+        <p class="section-kicker">For your 20th</p>
+        <h2 id="reasons-title">20 things I love about you</h2>
+      </div>
+      <ol class="reasons-list">
+        <li>Your smile changes the whole mood of my day.</li>
+        <li>You make love feel calm, real, and safe.</li>
+        <li>You care deeply, even in the smallest ways.</li>
+        <li>You are beautiful without even trying.</li>
+        <li>You make simple moments feel special.</li>
+        <li>You listen with your whole heart.</li>
+        <li>You bring softness into my life.</li>
+        <li>You are stronger than you think.</li>
+        <li>Your laugh is one of my favorite sounds.</li>
+        <li>You make me want to be better.</li>
+        <li>You are thoughtful in ways people remember.</li>
+        <li>You make every photo feel like a memory worth keeping.</li>
+        <li>You have a heart that deserves the best things.</li>
+        <li>You are my comfort after long days.</li>
+        <li>You are cute, sweet, and a little impossible to stop thinking about.</li>
+        <li>You make me proud to call you mine.</li>
+        <li>You turn ordinary days into stories.</li>
+        <li>You are my favorite hello.</li>
+        <li>You are my hardest goodbye.</li>
+        <li>You are you, and that is everything.</li>
+      </ol>
+    </section>
+
+    <section class="wish-section" aria-labelledby="wish-title">
+      <img src="assets/photos/photo-18.jpg" alt="Birthday memory">
+      <div>
+        <p class="section-kicker">One final wish</p>
+        <h2 id="wish-title">May your 20s begin beautifully</h2>
+        <p>
+          I hope this birthday feels as special as you are. I hope you feel loved from the second you wake up,
+          and I hope the year ahead brings you peace, confidence, success, and thousands of reasons to smile.
+        </p>
+        <button class="button primary" id="celebrateButton" type="button">Celebrate Dita</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close photo">×</button>
+    <img src="assets/photos/photo-01.jpg" alt="Selected memory">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
